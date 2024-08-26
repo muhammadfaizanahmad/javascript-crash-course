@@ -227,3 +227,263 @@
 // for (let i = 0; i < fruits.length; i++) {
 //   console.log(fruits[i]);
 // }
+
+// FUNCTIONS
+
+// -> A function is a block of code designed to perform a specific task.
+
+// Characterstics of Functions in JavaScript:
+
+/**
+ * Encapsulation
+ * Resuablitiy
+ * Parameters
+ * Return Value
+ * Scope
+ */
+
+// Types of Functions
+
+/**
+ * Named Functions
+ *
+ * Functions that have a name and can be called by that name.
+ *
+ * Anonymous Functions
+ * Arrow Functions
+ * IIFE (Immediately Invoked Function Expressions)
+ * Higher Order Functions
+ * Generator Functions
+ * Asynchronous Functions (Async/Await)
+ * Constructor Fucntions
+ * Resursive Functions
+ */
+
+// function greet(name) {
+//   console.log("Hello " + name);
+// }
+
+// greet("Daniyal!");
+
+// function multiply(x = 10, y = 3) {
+// return x * y;
+// }
+
+// console.log(multiply());
+
+// const greet = function() {
+//   console.log("Hello, Programmers!");
+// };
+
+// greet();
+
+// const greet = () => {
+//   console.log("Hello, Devs!");
+// }
+
+// greet();
+
+// Immediately Invoked Functions Expressions (IIFE)
+
+// (function() {
+//   console.log("This function runs immediately!");
+// }) ();
+
+// (function (a, b) {
+//   console.log(a + b);
+// })(7, 3);
+
+// Higher Order Functions
+
+// function higherOrderFunction(callback) {
+//   return callback();
+// }
+
+// concat();
+
+// var arr1 = [1, 2, 3];
+// var arr2 = [4, 5, 6];
+// var combined = arr1.concat(arr2);
+// console.log(combined);
+
+// includes()
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let result = numbers.includes(3, 5);
+// console.log(result);
+
+// indexOf();
+
+// let numbers = [1, 2, 3, 4, 5, 3, 6];
+// let index = numbers.indexOf(3, 5);
+// console.log(index);
+
+// lastIndexOf();
+
+// let numbers = [1, 2, 3, 4, 5, 6, 3, 7];
+// let lastIndex = numbers.lastIndexOf(3);
+// console.log(lastIndex);
+
+// join();
+
+// let words = ["Hello", "Mawaz"];
+// let sentence = words.join(" ");
+// console.log(sentence);
+
+// toString();
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let str = numbers.toString();
+// console.log(str);
+
+// ITERATION METHODS
+
+// forEach();
+
+// let numbers = [1, 2, 3];
+
+// numbers.forEach(function(number) {
+//   console.log(number);
+// });
+
+// map();
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let doubled = numbers.map(function(number) {
+//   return number * 2;
+// });
+
+// console.log(doubled);
+
+// filter
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let evenNumbers = numbers.filter(function(number) {
+//     return number % 2 === 0;
+// })
+
+// console.log(evenNumbers);
+
+// reduce();
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let sum = numbers.reduce(function (accumulator, currentElement) {
+//   return accumulator + currentElement;
+// });
+
+// console.log(sum);
+
+// some();
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let hasEven = numbers.some(function(number) {
+//     return number % 2 === 0;
+// })
+
+// console.log(hasEven);
+
+// every();
+
+// let numbers = [2, 4, 6];
+// let hasEven = numbers.every(function(number) {
+//     return number % 2 === 0;
+// })
+
+// console.log(hasEven);
+
+// find();
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let hasEven = numbers.find(function(number) {
+//     return number % 2 === 0;
+// })
+
+// console.log(hasEven);
+
+// findIndex();
+
+// let numbers = [1, 3, 4, 6];
+// let hasEven = numbers.findIndex(function(number) {
+//     return number % 2 === 0;
+// })
+
+// console.log(hasEven);
+
+// OBJECTS
+
+// OBJECT LITERAL NOTATION
+
+// const person = {
+//   name: "Faizan",
+//   age: 23,
+//   occupation: "Student",
+//   hobbies: ["reading", "sports", "coding"],
+//   income: function () {
+//     return 1000;
+//   },
+// };
+
+// console.log(person.income());
+
+// new Object Syntax()
+
+// const person = new Object();
+
+// person.name = "Faizan";
+// person.age = 23;
+// person.occupation = "Student";
+
+// console.log(person);
+
+// Constructor Function
+
+// function Person(name, age, occupation) {
+//     this.name = name;
+//     this.age = age;
+//     this.occupation = occupation;
+// }
+
+// const person1 = new Person("Faizan", 23, "Student");
+// const person2 = new Person("Majid", "Don't Know", "Student");
+
+// console.log(person1);
+// console.log(person2);
+
+// Classes
+
+// class Person {
+//   constructor(name, age, occupation) {
+//     this.name = name;
+//     this.age = age;
+//     this.occupation = occupation;
+//   }
+// }
+
+// const person1 = new Person("Faizan", 23, "Student");
+// const person2 = new Person("Majid", "Don't Know", "Student");
+
+// console.log(person1);
+// console.log(person2);
+
+// ARRAY OF OBJECTS
+
+// const Persons = [
+//   { name: "Faizan", age: 23, occupation: "Student" },
+//   { name: "Ahmad", age: 20, occupation: "Doctor" },
+//   { name: "Bilal", age: 25, occupation: "Engineer" },
+// ];
+
+// console.log(Persons);
+
+// FOR IN LOOP
+
+// const person = {
+//   name: "Faizan",
+//   age: 23,
+//   country: "Pakistan",
+// };
+
+// for (let key in person) {
+//   console.log(key + ": " + person[key]);
+// }
